@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var autoprefixer = require('autoprefixer')
+var OpenBrowserPlugin = require('open-browser-webpack-plugin')
 
 module.exports = {
 
@@ -20,7 +21,10 @@ module.exports = {
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new OpenBrowserPlugin({
+      url: 'http://localhost:4000'
+    })
   ],
 
   resolve: {
