@@ -1,0 +1,6 @@
+{
+  "name": "react-article-builder",
+  "dependencies": {
+    "octicons": "*"
+  }
+}
