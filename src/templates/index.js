@@ -1,0 +1,1 @@
+export TemplateTitle from './Title'

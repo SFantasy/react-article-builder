@@ -1,3 +1,6 @@
+@import './sass/_common';
+@import './sass/template';
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1000px;
-  overflow: scroll;
+  overflow: auto;
   margin: 10px auto;
 }
 
@@ -47,8 +50,20 @@ body {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
+.sidebar {
+  padding: 20px;
+}
+
 .editor {
   margin-left: 20px;
+  padding: 20px;
+  .msg {
+    font-size: 14px;
+    color: #999;
+    border: 1px dashed $BORDER_COLOR;
+    padding: 10px;
+    margin: 0;
+  }
 }
 
 .actions {
