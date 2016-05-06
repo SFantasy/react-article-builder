@@ -5,6 +5,8 @@ react-article-builder
 
 ## Development
 
+Run `npm install` before you start to develop.
+
 ### Scripts
 
 - Run dev-server
@@ -13,8 +15,6 @@ react-article-builder
 npm start
 ```
 
-Then visit on [localhost:4000](http://localhost:4000)
-
 - Generate bundled file for production
 
 ```
@@ -22,6 +22,8 @@ npm run bundle
 ```
 
 - Check code style
+
+> Run `npm i standard -g` before use [standard.js](https://github.com/feross/standard)
 
 ```
 npm run check-style
